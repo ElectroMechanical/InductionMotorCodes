@@ -1,0 +1,2281 @@
+Model {
+  Name			  "ModelADabThesisBg2"
+  Version		  6.3
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.295"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "ibm-5347_P100-1998"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed Mar 12 08:59:38 2008"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "LT Phyo Mg Mg"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Jun 30 10:15:25 2010"
+  ModelVersionFormat	  "1.%<AutoIncrement:295>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.1.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.1.0"
+	  StartTime		  "0.0"
+	  StopTime		  "0.35"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.1.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "InitFltsAndDblsToZero"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.1.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  on
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  ParameterPooling	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.1.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.1.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.1.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.1.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Array {
+		Type			"Cell"
+		Dimension		9
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.1.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      CustomSymbolStr	      "$R$N$M"
+	      MangleLength	      1
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.1.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      SimulationMode	      "normal"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Sin
+      SineType		      "Time based"
+      TimeSource	      "Use simulation time"
+      Amplitude		      "1"
+      Bias		      "0"
+      Frequency		      "1"
+      Phase		      "0"
+      Samples		      "10"
+      Offset		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToFile
+      Filename		      "untitled.mat"
+      MatrixName	      "ans"
+      Decimation	      "1"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      TransportDelay
+      DelayTime		      "1"
+      InitialOutput	      "0"
+      BufferSize	      "1024"
+      FixedBuffer	      off
+      TransDelayFeedthrough   off
+      PadeOrder		      "0"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "ModelADabThesisBg2"
+    Location		    [36, 99, 1317, 817]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "3-Phase AD alpha-beta subsystem"
+      Ports		      [2, 4]
+      Position		      [400, 123, 520, 557]
+      ForegroundColor	      "blue"
+      BackgroundColor	      "orange"
+      DropShadow	      on
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskHideContents	      off
+      System {
+	Name			"3-Phase AD alpha-beta subsystem"
+	Location		[84, 86, 1215, 804]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ualpha"
+	  Position		  [115, 118, 145, 132]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ubeta"
+	  Position		  [115, 418, 145, 432]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "D(Psi-Ra)/dt\n"
+	  Ports			  [1, 1]
+	  Position		  [380, 110, 410, 140]
+	  ForegroundColor	  "cyan"
+	  IgnoreLimit		  off
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "D(Psi-Rb)/dt\n"
+	  Ports			  [1, 1]
+	  Position		  [375, 410, 405, 440]
+	  ForegroundColor	  "cyan"
+	  IgnoreLimit		  off
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "D(Psi-Sa)/dt"
+	  Ports			  [1, 1]
+	  Position		  [220, 110, 250, 140]
+	  ForegroundColor	  "green"
+	  IgnoreLimit		  off
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "D(Psi-Sb)/dt\n"
+	  Ports			  [1, 1]
+	  Position		  [225, 410, 255, 440]
+	  ForegroundColor	  "green"
+	  IgnoreLimit		  off
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "D(omega)/dt"
+	  Ports			  [1, 1]
+	  Position		  [760, 120, 790, 150]
+	  ForegroundColor	  "red"
+	  IgnoreLimit		  off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G1->a1"
+	  Position		  [180, 37, 230, 73]
+	  Orientation		  "left"
+	  Gain			  "a1"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G10->a6"
+	  Position		  [575, 134, 615, 176]
+	  Gain			  "a6"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G11->a7"
+	  Position		  [455, 518, 515, 552]
+	  Gain			  "a7"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G12->a7"
+	  Position		  [605, 390, 655, 420]
+	  Gain			  "a7"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G13->a8"
+	  Position		  [605, 343, 655, 377]
+	  Gain			  "a8"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G2->a2"
+	  Position		  [190, 165, 240, 205]
+	  Orientation		  "left"
+	  Gain			  "a2"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G3->a1"
+	  Position		  [175, 330, 225, 370]
+	  Orientation		  "left"
+	  Gain			  "a1"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G4->a2"
+	  Position		  [185, 521, 240, 569]
+	  Orientation		  "left"
+	  Gain			  "a2"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G5->a5"
+	  Position		  [695, 112, 745, 158]
+	  Gain			  "a5"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G6->a3"
+	  Position		  [275, 103, 320, 147]
+	  Gain			  "a3"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G7->a3"
+	  Position		  [275, 403, 325, 447]
+	  Gain			  "a3"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G8_1/p"
+	  Position		  [710, 286, 755, 314]
+	  Gain			  "1/p"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "G9->a8"
+	  Position		  [455, 471, 510, 509]
+	  Gain			  "a8"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain7->a4"
+	  Position		  [345, 31, 410, 69]
+	  Orientation		  "left"
+	  Gain			  "a4"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain8-a4"
+	  Position		  [360, 473, 420, 507]
+	  Orientation		  "left"
+	  Gain			  "a4"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Step
+	  Name			  "Moment Mc1"
+	  Position		  [535, 25, 565, 55]
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "lightBlue"
+	  Time			  "0.08"
+	  After			  "17"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [480, 117, 510, 148]
+	  ForegroundColor	  "blue"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  Ports			  [2, 1]
+	  Position		  [335, 212, 365, 243]
+	  Orientation		  "left"
+	  ForegroundColor	  "blue"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product3"
+	  Ports			  [2, 1]
+	  Position		  [335, 272, 365, 303]
+	  Orientation		  "left"
+	  ForegroundColor	  "blue"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product6"
+	  Ports			  [2, 1]
+	  Position		  [475, 337, 505, 368]
+	  ForegroundColor	  "blue"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [3, 1]
+	  Position		  [180, 84, 200, 166]
+	  ForegroundColor	  "orange"
+	  ShowName		  off
+	  Inputs		  "-++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [3, 1]
+	  Position		  [180, 384, 200, 466]
+	  ForegroundColor	  "orange"
+	  ShowName		  off
+	  Inputs		  "-++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [3, 1]
+	  Position		  [330, 84, 350, 166]
+	  ForegroundColor	  "orange"
+	  ShowName		  off
+	  Inputs		  "-+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [3, 1]
+	  Position		  [335, 384, 355, 466]
+	  ForegroundColor	  "orange"
+	  ShowName		  off
+	  Inputs		  "++-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum4"
+	  Ports			  [2, 1]
+	  Position		  [535, 465, 555, 560]
+	  ForegroundColor	  "orange"
+	  ShowName		  off
+	  Inputs		  "-+"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum5"
+	  Ports			  [2, 1]
+	  Position		  [540, 114, 560, 196]
+	  ForegroundColor	  "orange"
+	  ShowName		  off
+	  Inputs		  "+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum6"
+	  Ports			  [2, 1]
+	  Position		  [690, 335, 710, 430]
+	  ForegroundColor	  "orange"
+	  ShowName		  off
+	  Inputs		  "-+"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum7"
+	  Ports			  [2, 1]
+	  Position		  [660, 94, 680, 176]
+	  ForegroundColor	  "orange"
+	  ShowName		  off
+	  Inputs		  "-+"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Moment"
+	  Position		  [705, 208, 735, 222]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "omega(mech)"
+	  Position		  [805, 293, 835, 307]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Isa"
+	  Position		  [735, 378, 765, 392]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Isb"
+	  Position		  [580, 508, 610, 522]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Moment Mc1"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 75]
+	  DstBlock		  "Sum7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "D(Psi-Sa)/dt"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G1->a1"
+	  SrcPort		  1
+	  Points		  [-20, 0; 0, 45]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G2->a2"
+	  SrcPort		  1
+	  Points		  [-30, 0; 0, -35]
+	  DstBlock		  "Sum"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "G3->a1"
+	  SrcPort		  1
+	  Points		  [-15, 0; 0, 50]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G4->a2"
+	  SrcPort		  1
+	  Points		  [-25, 0; 0, -95]
+	  DstBlock		  "Sum1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "D(Psi-Sa)/dt"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    DstBlock		    "G6->a3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 220; 155, 0]
+	    Branch {
+	      DstBlock		      "Product6"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 60]
+	      DstBlock		      "G12->a7"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, -70]
+	    DstBlock		    "G1->a1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "D(Psi-Sb)/dt\n"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    DstBlock		    "G7->a3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -70]
+	    Branch {
+	      Points		      [-25, 0]
+	      DstBlock		      "G3->a1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -30; 200, 0]
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 110]
+	    DstBlock		    "G11->a7"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "D(Psi-Sb)/dt\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G7->a3"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "G6->a3"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "D(Psi-Rb)/dt\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain7->a4"
+	  SrcPort		  1
+	  Points		  [-30, 0; 0, 50]
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "D(Psi-Ra)/dt\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "D(Psi-Ra)/dt\n"
+	  SrcPort		  1
+	  Points		  [0, 0; 40, 0]
+	  Branch {
+	    DstBlock		    "Product1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 60]
+	    Branch {
+	      DstBlock		      "G2->a2"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 35]
+	      Branch {
+		DstBlock		"Product2"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 95; 125, 0; 0, 45]
+		DstBlock		"G13->a8"
+		DstPort			1
+	      }
+	    }
+	  }
+	  Branch {
+	    Points		    [0, -75]
+	    DstBlock		    "Gain7->a4"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product3"
+	  SrcPort		  1
+	  Points		  [-20, 0; 0, -140]
+	  DstBlock		  "Sum2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "D(Psi-Rb)/dt\n"
+	  SrcPort		  1
+	  Points		  [0, 0; 30, 0]
+	  Branch {
+	    Points		    [0, 65]
+	    Branch {
+	      DstBlock		      "Gain8-a4"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 55]
+	      DstBlock		      "G4->a2"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "G9->a8"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, -65]
+	    Branch {
+	      DstBlock		      "Product6"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -65]
+	      DstBlock		      "Product3"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain8-a4"
+	  SrcPort		  1
+	  Points		  [-35, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "G9->a8"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G11->a7"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  DstBlock		  "Sum5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product6"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -180]
+	  DstBlock		  "Sum5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum5"
+	  SrcPort		  1
+	  DstBlock		  "G10->a6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G10->a6"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "Sum7"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 60]
+	    DstBlock		    "Moment"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum7"
+	  SrcPort		  1
+	  DstBlock		  "G5->a5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G5->a5"
+	  SrcPort		  1
+	  DstBlock		  "D(omega)/dt"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "D(omega)/dt"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 145; -210, 0; 0, -45]
+	  Branch {
+	    DstBlock		    "Product2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "Product3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "G8_1/p"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  Points		  [-40, 0; 0, 170]
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G13->a8"
+	  SrcPort		  1
+	  DstBlock		  "Sum6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G12->a7"
+	  SrcPort		  1
+	  DstBlock		  "Sum6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Ualpha"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Ubeta"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum6"
+	  SrcPort		  1
+	  DstBlock		  "Isa"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum4"
+	  SrcPort		  1
+	  DstBlock		  "Isb"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G8_1/p"
+	  SrcPort		  1
+	  DstBlock		  "omega(mech)"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "\n"
+	  Position		  [25, 55]
+	  HorizontalAlignment	  "left"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Sum3"
+	  Position		  [340, 173]
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Sum4"
+	  Position		  [344, 476]
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Sum5"
+	  Position		  [553, 211]
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "a7*Psi-Sb-a8*Psi-Rb"
+	  Position		  [558, 569]
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Sum1"
+	  Position		  [188, 172]
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Sum2"
+	  Position		  [188, 476]
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Sa"
+	  Position		  [261, 47]
+	  ForegroundColor	  "green"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Sa"
+	  Position		  [376, 351]
+	  ForegroundColor	  "green"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Ra"
+	  Position		  [480, 106]
+	  ForegroundColor	  "cyan"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Ra"
+	  Position		  [383, 204]
+	  ForegroundColor	  "cyan"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "omgea"
+	  Position		  [407, 247]
+	  ForegroundColor	  "red"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "omgea"
+	  Position		  [407, 267]
+	  ForegroundColor	  "red"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Rb"
+	  Position		  [397, 307]
+	  ForegroundColor	  "cyan"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Rb"
+	  Position		  [267, 562]
+	  ForegroundColor	  "cyan"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Rb"
+	  Position		  [462, 392]
+	  ForegroundColor	  "cyan"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Sb"
+	  Position		  [287, 467]
+	  ForegroundColor	  "green"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Sb"
+	  Position		  [242, 367]
+	  ForegroundColor	  "green"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Sb"
+	  Position		  [487, 172]
+	  ForegroundColor	  "green"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "a1*Psi-Sa"
+	  Position		  [171, 47]
+	  ForegroundColor	  "green"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Ra"
+	  Position		  [288, 194]
+	  ForegroundColor	  "cyan"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "a2*Psi-Ra"
+	  Position		  [173, 199]
+	  ForegroundColor	  "cyan"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "a1*Psi-Sb"
+	  Position		  [172, 337]
+	  ForegroundColor	  "green"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "a2*Psi-Rb"
+	  Position		  [167, 562]
+	  ForegroundColor	  "cyan"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Sb"
+	  Position		  [347, 527]
+	  ForegroundColor	  "green"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "a7*Psi-Sb-a8*Psi-Rb"
+	  Position		  [713, 439]
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Ra"
+	  Position		  [590, 371]
+	  ForegroundColor	  "cyan"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Psi-Sa"
+	  Position		  [586, 416]
+	  ForegroundColor	  "green"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Isb"
+	  Position		  [766, 444]
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "omega(elec)"
+	  Position		  [651, 270]
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "D(Ysa)/dt=Usa-a1*YSa+a2*Yra\nD(Yra)/dt=a3*Y"
+"Sa-a4*Yra-wr*Yra\nD(Ysb)/dt=Usb-a1*YSb+a2*Yrb\nD(Yrb)/dt=-a3*YSb-a4*Yrb+wr*Yr"
+"a\nD(wr)/dt=a5(M-Mc)\nM=a6(Ysb*Yra-Ysa*Yrb)\nIsa=a7*Ysa-a8*Yra\nIsb=a7Ysb-a8Y"
+"rb\n"
+	  Position		  [906, 105]
+	  HorizontalAlignment	  "left"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "a1=rs*lr/(ls*lr-M^2);\na2=rs*M/(ls*lr-M^2);"
+"\na3=rr*M/(ls*lr-M^2);\na4=rr*ls/(ls*lr-M^2);\na5=p/jr;\na6=3*p*M/(2*(ls*lr-M"
+"^2));\na7=lr/(ls*lr-M^2);\na8=M/(ls*lr-M^2);\na9=a8/M*ls;\n"
+	  Position		  [908, 261]
+	  HorizontalAlignment	  "left"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Ysa=Psi-Sa\nYsb=Psi-Sb\nYra=Psi-Ra\nYrb=Psi"
+"-Rb"
+	  Position		  [911, 392]
+	  HorizontalAlignment	  "left"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "3 Phase AD alpha-beta Sub System"
+	  Position		  [425, 615]
+	  HorizontalAlignment	  "left"
+	  BackgroundColor	  "lightBlue"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Position		  [135, 126]
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Position		  [130, 122]
+	  UseDisplayTextAsClickCallback	off
+	}
+      }
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Disp1-P1"
+      Ports		      [1]
+      Position		      [805, 395, 895, 425]
+      BackgroundColor	      "lightBlue"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Disp1-Q1"
+      Ports		      [1]
+      Position		      [850, 570, 940, 600]
+      BackgroundColor	      "lightBlue"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Disp_Isb1"
+      Ports		      [1]
+      Position		      [800, 280, 890, 310]
+      BackgroundColor	      "lightBlue"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Disp_M1"
+      Ports		      [1]
+      Position		      [740, 85, 830, 115]
+      BackgroundColor	      "lightBlue"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Disp_OmegaR1"
+      Ports		      [1]
+      Position		      [745, 175, 835, 205]
+      BackgroundColor	      "lightBlue"
+      Decimation	      "1"
+      Lockdown		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Moment1"
+      Ports		      [1]
+      Position		      [610, 129, 640, 161]
+      BackgroundColor	      "yellow"
+      Floating		      off
+      Location		      [960, 56, 1284, 274]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      SaveName		      "ScopeData9"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [5, 1]
+      Position		      [975, 137, 980, 423]
+      ShowName		      off
+      Inputs		      "5"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Omega1"
+      Ports		      [1]
+      Position		      [675, 224, 705, 256]
+      BackgroundColor	      "yellow"
+      Floating		      off
+      Location		      [959, 292, 1283, 497]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      SaveName		      "ScopeData10"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Powe1r-Q1"
+      Ports		      [1]
+      Position		      [690, 514, 720, 546]
+      BackgroundColor	      "yellow"
+      Floating		      off
+      Location		      [188, 390, 512, 629]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      SaveName		      "ScopeData13"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Power1-P1"
+      Ports		      [1]
+      Position		      [690, 444, 720, 476]
+      BackgroundColor	      "yellow"
+      Floating		      off
+      Location		      [958, 655, 1282, 894]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      SaveName		      "ScopeData12"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "RMS2"
+      Ports		      [1, 1]
+      Position		      [720, 266, 770, 324]
+      BackgroundColor	      "[1.000000, 0.501961, 0.250980]"
+      SourceBlock	      "powerlib_extras/Measurements/RMS"
+      SourceType	      "RMS"
+      ShowPortLabels	      on
+      f1		      "60"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem1"
+      Ports		      [4, 2]
+      Position		      [570, 423, 620, 562]
+      ForegroundColor	      "cyan"
+      BackgroundColor	      "orange"
+      DropShadow	      on
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskHideContents	      off
+      System {
+	Name			"Subsystem1"
+	Location		[595, 220, 1163, 763]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Isa"
+	  Position		  [40, 63, 70, 77]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Isb"
+	  Position		  [25, 128, 55, 142]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Usb"
+	  Position		  [30, 188, 60, 202]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Usa"
+	  Position		  [15, 255, 45, 270]
+	  Orientation		  "up"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain4"
+	  Position		  [325, 93, 370, 127]
+	  Gain			  "1.5"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain5"
+	  Position		  [345, 209, 385, 241]
+	  Gain			  "1.5"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum10"
+	  Ports			  [2, 1]
+	  Position		  [255, 69, 270, 151]
+	  ForegroundColor	  "magenta"
+	  ShowName		  off
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum11"
+	  Ports			  [2, 1]
+	  Position		  [310, 185, 325, 265]
+	  ForegroundColor	  "magenta"
+	  ShowName		  off
+	  Inputs		  "+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Usa*Isa"
+	  Ports			  [2, 1]
+	  Position		  [180, 62, 210, 93]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Usa*Isb"
+	  Ports			  [2, 1]
+	  Position		  [195, 242, 225, 273]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Usb*Isa"
+	  Ports			  [2, 1]
+	  Position		  [195, 187, 225, 218]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Usb*Isb"
+	  Ports			  [2, 1]
+	  Position		  [185, 127, 215, 158]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "P1"
+	  Position		  [395, 103, 425, 117]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Q1"
+	  Position		  [410, 218, 440, 232]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Isb"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    Points		    [0, 130]
+	    DstBlock		    "Usa*Isb"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Usb*Isb"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Usa*Isa"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  DstBlock		  "Sum10"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Usb*Isb"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  DstBlock		  "Sum10"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum10"
+	  SrcPort		  1
+	  DstBlock		  "Gain4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum11"
+	  SrcPort		  1
+	  DstBlock		  "Gain5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Usb*Isa"
+	  SrcPort		  1
+	  DstBlock		  "Sum11"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Usa*Isb"
+	  SrcPort		  1
+	  Points		  [0, -15]
+	  DstBlock		  "Sum11"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Usb"
+	  SrcPort		  1
+	  Points		  [40, 0; 15, 0]
+	  Branch {
+	    Points		    [0, -45]
+	    DstBlock		    "Usb*Isb"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Usb*Isa"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Usa"
+	  SrcPort		  1
+	  Points		  [110, 0; 0, -15]
+	  Branch {
+	    Points		    [0, -150]
+	    DstBlock		    "Usa*Isa"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [40, 0]
+	    DstBlock		    "Usa*Isb"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Isa"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    DstBlock		    "Usa*Isa"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 140]
+	    DstBlock		    "Usb*Isa"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain4"
+	  SrcPort		  1
+	  DstBlock		  "P1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain5"
+	  SrcPort		  1
+	  DstBlock		  "Q1"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "\n"
+	  Position		  [335, 25]
+	  HorizontalAlignment	  "left"
+	  UseDisplayTextAsClickCallback	off
+	}
+	Annotation {
+	  Name			  "Isa=a7*Ysa-a8*Yra\nIsb=a7Ysb-a8Yrb\nQ1=3/2("
+"Usb*Isa-Usa*Isb)\nP1=3/2(Usa*Isa-Usb*Isb)\n\n"
+	  Position		  [55, 325]
+	  HorizontalAlignment	  "left"
+	  UseDisplayTextAsClickCallback	off
+	}
+      }
+    }
+    Block {
+      BlockType		      ToFile
+      Name		      "To File"
+      Position		      [1080, 264, 1165, 296]
+      Filename		      "dataAlphaBeta.mat"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Tok Isa1"
+      Ports		      [1]
+      Position		      [655, 324, 685, 356]
+      BackgroundColor	      "yellow"
+      Floating		      off
+      Location		      [65, 523, 389, 762]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      SaveName		      "ScopeData11"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Um*Cos(omega*t)\n"
+      Ports		      [0, 1]
+      Position		      [285, 435, 315, 465]
+      ForegroundColor	      "cyan"
+      BackgroundColor	      "magenta"
+      SineType		      "Time based"
+      Amplitude		      "311.12"
+      Frequency		      "314"
+      Phase		      "pi/2"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Um*Sin(omega*t)"
+      Ports		      [0, 1]
+      Position		      [280, 220, 310, 250]
+      ForegroundColor	      "green"
+      BackgroundColor	      "magenta"
+      SineType		      "Time based"
+      Amplitude		      "-311.12"
+      Frequency		      "314"
+      SampleTime	      "0"
+    }
+    Line {
+      SrcBlock		      "3-Phase AD alpha-beta subsystem"
+      SrcPort		      3
+      Points		      [0, -10; 10, 0]
+      Branch {
+	Points			[0, 55]
+	DstBlock		"Subsystem1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -45; 75, 0]
+	Branch {
+	  DstBlock		  "Tok Isa1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -45; 80, 0]
+	  Branch {
+	    DstBlock		    "RMS2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -15]
+	    DstBlock		    "Mux"
+	    DstPort		    3
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Um*Sin(omega*t)"
+      SrcPort		      1
+      Points		      [35, 0]
+      Branch {
+	DstBlock		"3-Phase AD alpha-beta subsystem"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 365; 205, 0]
+	DstBlock		"Subsystem1"
+	DstPort			4
+      }
+    }
+    Line {
+      SrcBlock		      "Um*Cos(omega*t)\n"
+      SrcPort		      1
+      Points		      [50, 0]
+      Branch {
+	DstBlock		"3-Phase AD alpha-beta subsystem"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 135; 175, 0; 0, -75]
+	DstBlock		"Subsystem1"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "Subsystem1"
+      SrcPort		      1
+      Points		      [0, 0; 30, 0]
+      Branch {
+	DstBlock		"Power1-P1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -50; 120, 0]
+	Branch {
+	  DstBlock		  "Disp1-P1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -75]
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Subsystem1"
+      SrcPort		      2
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"Powe1r-Q1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 55; 130, 0]
+	Branch {
+	  DstBlock		  "Disp1-Q1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -80; 135, 0; 0, -115]
+	  DstBlock		  "Mux"
+	  DstPort		  5
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "RMS2"
+      SrcPort		      1
+      DstBlock		      "Disp_Isb1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "3-Phase AD alpha-beta subsystem"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[50, 0]
+	DstBlock		"Moment1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -75; 140, 0]
+	Branch {
+	  DstBlock		  "Disp_M1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 70]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "3-Phase AD alpha-beta subsystem"
+      SrcPort		      4
+      Points		      [30, 0]
+      DstBlock		      "Subsystem1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "3-Phase AD alpha-beta subsystem"
+      SrcPort		      2
+      Points		      [50, 0; 0, -45; 30, 0]
+      Branch {
+	DstBlock		"Omega1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -50; 115, 0]
+	Branch {
+	  DstBlock		  "Disp_OmegaR1"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 35]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "To File"
+      DstPort		      1
+    }
+    Annotation {
+      Name		      "omgea"
+      Position		      [642, 232]
+      ForegroundColor	      "red"
+      UseDisplayTextAsClickCallback off
+    }
+    Annotation {
+      Name		      "Note: Only for Matlab Version 7.0.0.1 and above"
+",\n\nTO RUN THIS MODEL PLEASE FIRST RUN\nDateAdDiff_Eq.m \nTO CALCULATE a1,a2"
+",a3,a4,a5,a6,a7,a8,a9\n\n"
+      Position		      [505, 975]
+      HorizontalAlignment     "left"
+      ForegroundColor	      "red"
+      BackgroundColor	      "lightBlue"
+      UseDisplayTextAsClickCallback off
+      FontName		      "Arial"
+      FontSize		      14
+    }
+    Annotation {
+      Name		      "D(Ysa)/dt=Usa-a1*YSa+a2*Yra\nD(Yra)/dt=a3*YSa-a"
+"4*Yra-wr*Yra\nD(Ysb)/dt=Usb-a1*YSb+a2*Yrb\nD(Yrb)/dt=-a3*YSb-a4*Yrb+wr*Yra\nD"
+"(wr)/dt=a5(M-Mc)\nM=a6(Ysb*Yra-Ysa*Yrb)\nIsa=a7*Ysa-a8*Yra\nIsb=a7Ysb-a8Yrb\n"
+"Q1=3/2(Usb*Isa-Usa*Isb)\nP1=3/2(Usa*Isa-Usb*Isb)\n\n"
+      Position		      [151, 995]
+      HorizontalAlignment     "left"
+      ForegroundColor	      "blue"
+      UseDisplayTextAsClickCallback off
+    }
+    Annotation {
+      Name		      "Ysa=Psi-Sa\nYsb=Psi-Sb\nYra=Psi-Ra\nYrb=Psi-Rb"
+      Position		      [346, 1082]
+      HorizontalAlignment     "left"
+      UseDisplayTextAsClickCallback off
+    }
+    Annotation {
+      Name		      "a1=rs*lr/(ls*lr-M^2);\na2=rs*M/(ls*lr-M^2);\na3"
+"=rr*M/(ls*lr-M^2);\na4=rr*ls/(ls*lr-M^2);\na5=p/jr;\na6=3*p*M/(2*(ls*lr-M^2))"
+";\na7=lr/(ls*lr-M^2);\na8=M/(ls*lr-M^2);\na9=a8/M*ls;\n"
+      Position		      [343, 981]
+      HorizontalAlignment     "left"
+      UseDisplayTextAsClickCallback off
+    }
+    Annotation {
+      Name		      "  "
+      Position		      [466, 1098]
+      HorizontalAlignment     "left"
+      UseDisplayTextAsClickCallback off
+    }
+    Annotation {
+      Name		      "Transient Analysis Of Induction motor in Alpha-"
+"Beta System Coordinate"
+      Position		      [515, 42]
+      BackgroundColor	      "cyan"
+      UseDisplayTextAsClickCallback off
+      FontName		      "Arial"
+      FontSize		      16
+      FontWeight	      "bold"
+    }
+  }
+}

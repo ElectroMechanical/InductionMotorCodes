@@ -1,0 +1,469 @@
+Model {
+  Name			  "Transf_3f"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Jan 25 17:11:15 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Jan 25 18:20:51 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "0.1"
+  SolverMode		  "Auto"
+  Solver		  "ode23tb"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "1e-3"
+  MinStep		  "1e-4"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeLogAll		  on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "Transf_3f"
+    Location		    [157, 140, 864, 665]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "3-Phase RLC\nParallel Load"
+      Ports		      [3]
+      Position		      [459, 130, 511, 195]
+      Orientation	      "down"
+      SourceBlock	      "powerlib_extras/Three-Phase\nLibrary/3-Phase RL"
+"C\nParallel Load"
+      SourceType	      "3-phase parallel RLC load "
+      Vpp		      "380"
+      fn		      "50"
+      P3		      "100e3"
+      QL3		      "50e3"
+      QC3		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Active & Reactive\nPower"
+      Ports		      [2, 1]
+      Position		      [260, 229, 310, 276]
+      SourceBlock	      "powerlib_extras/Measurements/Active & Reactive"
+"\nPower"
+      SourceType	      "Active & Reactive Power "
+      f1		      "50"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Active & Reactive\nPower1"
+      Ports		      [2, 1]
+      Position		      [470, 234, 520, 281]
+      SourceBlock	      "powerlib_extras/Measurements/Active & Reactive"
+"\nPower"
+      SourceType	      "Active & Reactive Power "
+      f1		      "50"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [330, 192, 415, 318]
+      FontSize		      10
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display1"
+      Ports		      [1]
+      Position		      [545, 200, 645, 320]
+      FontSize		      10
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ground (output)"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [0, 1]
+      Position		      [19, 150, 51, 180]
+      Orientation	      "up"
+      ShowName		      off
+      SourceBlock	      "powerlib2/Connectors/Ground (output)"
+      SourceType	      "Ground"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Inductive source\nwith neutral"
+      Ports		      [1, 3]
+      Position		      [60, 85, 135, 175]
+      SourceBlock	      "powerlib_extras/Three-Phase\nLibrary/Inductive "
+"source\nwith neutral"
+      SourceType	      "3-phase inductive source - Ungrounded neutral"
+      V			      "1000"
+      Phi		      "0"
+      F			      "50"
+      R			      "0.001"
+      L			      "1e-4"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Measur.1"
+      Ports		      [3, 5]
+      Position		      [165, 63, 220, 197]
+      SourceBlock	      "powerlib_extras/Measurements/Three-Phase\nV-I M"
+"easurement"
+      SourceType	      "3-Phase VI Measurement "
+      Vpu		      off
+      Vbase		      "500e3"
+      Ppu		      off
+      Pbase		      "100e6"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Measur.2"
+      Ports		      [3, 5]
+      Position		      [365, 68, 415, 142]
+      SourceBlock	      "powerlib_extras/Measurements/Three-Phase\nV-I M"
+"easurement"
+      SourceType	      "3-Phase VI Measurement "
+      Vpu		      off
+      Vbase		      "500e3"
+      Ppu		      off
+      Pbase		      "100e6"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1]
+      Position		      [265, 334, 295, 366]
+      Floating		      off
+      Location		      [188, 365, 685, 649]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Three-phase\nTransformer\n(Two Windings)"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [3, 3]
+      Position		      [255, 65, 325, 145]
+      SourceBlock	      "powerlib2/Elements/Three-phase\nTransformer\n(T"
+"wo Windings)"
+      SourceType	      "Three-Phase Transformer (Two Windings)"
+      nominal		      "[ 500e3 , 50 ]"
+      type1		      "Y"
+      params1		      "[ 660 , 0.02 , 0.8 ]"
+      type2		      "Y"
+      params2		      "[ 380 , 0.02 , 0.8 ]"
+      ynsat		      off
+      rmag		      "500"
+      lm		      "500"
+      sat		      "[ 0,0  ;  0.005,1.2  ;  1.0,1.4 ]"
+      sif		      off
+      phi0		      "[ 0.8 , -0.8 , 0.7 ]"
+      mesure		      "None"
+      PSBOutputType	      "1111"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "powergui"
+      Ports		      []
+      Position		      [50, 260, 141, 289]
+      DropShadow	      on
+      ShowName		      off
+      SourceBlock	      "powerlib2/powergui"
+      SourceType	      ""
+      matfilesaved	      off
+      Frange		      "logspace(0,3,50)"
+      Ylog		      off
+      Xlog		      off
+      save		      off
+      variable		      "ZData"
+      display		      off
+    }
+    Line {
+      SrcBlock		      "Ground (output)"
+      SrcPort		      1
+      Points		      [0, -15]
+      DstBlock		      "Inductive source\nwith neutral"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Inductive source\nwith neutral"
+      SrcPort		      1
+      Points		      [0, -15]
+      DstBlock		      "Measur.1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Measur.1"
+      SrcPort		      1
+      DstBlock		      "Three-phase\nTransformer\n(Two Windings)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Measur.1"
+      SrcPort		      2
+      DstBlock		      "Three-phase\nTransformer\n(Two Windings)"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Measur.1"
+      SrcPort		      3
+      DstBlock		      "Three-phase\nTransformer\n(Two Windings)"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Inductive source\nwith neutral"
+      SrcPort		      2
+      DstBlock		      "Measur.1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Inductive source\nwith neutral"
+      SrcPort		      3
+      Points		      [5, 0; 0, 15]
+      DstBlock		      "Measur.1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Measur.1"
+      SrcPort		      5
+      Points		      [0, 85]
+      Branch {
+	DstBlock		"Active & Reactive\nPower"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 85]
+	DstBlock		"Scope"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Measur.1"
+      SrcPort		      4
+      Points		      [10, 0; 0, 85]
+      DstBlock		      "Active & Reactive\nPower"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Three-phase\nTransformer\n(Two Windings)"
+      SrcPort		      1
+      DstBlock		      "Measur.2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Three-phase\nTransformer\n(Two Windings)"
+      SrcPort		      2
+      DstBlock		      "Measur.2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Three-phase\nTransformer\n(Two Windings)"
+      SrcPort		      3
+      DstBlock		      "Measur.2"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Measur.2"
+      SrcPort		      5
+      Points		      [10, 0; 0, 135]
+      DstBlock		      "Active & Reactive\nPower1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Measur.2"
+      SrcPort		      4
+      Points		      [25, 0; 0, 125]
+      DstBlock		      "Active & Reactive\nPower1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Measur.2"
+      SrcPort		      1
+      Points		      [50, 0]
+      DstBlock		      "3-Phase RLC\nParallel Load"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Measur.2"
+      SrcPort		      2
+      Points		      [65, 0]
+      DstBlock		      "3-Phase RLC\nParallel Load"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Measur.2"
+      SrcPort		      3
+      Points		      [80, 0]
+      DstBlock		      "3-Phase RLC\nParallel Load"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Active & Reactive\nPower"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Active & Reactive\nPower1"
+      SrcPort		      1
+      DstBlock		      "Display1"
+      DstPort		      1
+    }
+  }
+}

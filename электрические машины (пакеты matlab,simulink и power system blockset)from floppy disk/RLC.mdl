@@ -1,0 +1,324 @@
+Model {
+  Name			  "RLC"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  InitFcn		  "powericon('psbinitsys',bdroot);"
+  Created		  "Thu Feb 07 11:10:05 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "ieao"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Feb 07 13:21:36 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "0.1"
+  SolverMode		  "Auto"
+  Solver		  "ode23tb"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "RLC"
+    Location		    [481, 100, 981, 385]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "AC Voltage Source"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1, 1]
+      Position		      [67, 70, 93, 105]
+      Orientation	      "up"
+      SourceBlock	      "powerlib2/Electrical\nSources/AC Voltage Source"
+      SourceType	      "AC Voltage Source"
+      A			      "10"
+      P			      "0"
+      F			      "100"
+      stime		      "0"
+      mesure		      "None"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Current Measurement"
+      Tag		      "PoWeRsYsTeMmEaSuReMeNt"
+      Ports		      [1, 2]
+      Position		      [140, 28, 165, 52]
+      SourceBlock	      "powerlib2/Measurements/Current Measurement"
+      SourceType	      "Current Measurement"
+      PSBOutputType	      "01"
+      PSBequivalent	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ground (input)"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1]
+      Position		      [350, 155, 380, 185]
+      Orientation	      "down"
+      ShowName		      off
+      SourceBlock	      "powerlib2/Connectors/Ground (input)"
+      SourceType	      "Ground"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ground (input)1"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1]
+      Position		      [310, 155, 340, 185]
+      Orientation	      "down"
+      ShowName		      off
+      SourceBlock	      "powerlib2/Connectors/Ground (input)"
+      SourceType	      "Ground"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ground (output)"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [0, 1]
+      Position		      [64, 130, 96, 160]
+      Orientation	      "up"
+      SourceBlock	      "powerlib2/Connectors/Ground (output)"
+      SourceType	      "Ground"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Series RLC Branch"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1, 1]
+      Position		      [355, 70, 375, 125]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      SourceBlock	      "powerlib2/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      a			      "20"
+      b			      "1e-02"
+      c			      "inf"
+      mesure		      "None"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Series RLC Branch1"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1, 1]
+      Position		      [314, 70, 336, 110]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      SourceBlock	      "powerlib2/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      a			      "0.01"
+      b			      "0"
+      c			      "1e-05"
+      mesure		      "None"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "powergui"
+      Ports		      []
+      Position		      [60, 225, 151, 254]
+      DropShadow	      on
+      ShowName		      off
+      SourceBlock	      "powerlib2/powergui"
+      SourceType	      "PSB option menu block"
+      matfilesaved	      off
+      Frange		      "logspace(0,3,50)"
+      Ylog		      off
+      Xlog		      off
+      save		      off
+      variable		      "ZData"
+      display		      off
+      Ts		      "0"
+      methode		      off
+      frequency		      "60"
+      echomessages	      off
+    }
+    Line {
+      SrcBlock		      "AC Voltage Source"
+      SrcPort		      1
+      Points		      [0, -25]
+      DstBlock		      "Current Measurement"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Current Measurement"
+      SrcPort		      2
+      Points		      [155, 0]
+      Branch {
+	DstBlock		"Series RLC Branch1"
+	DstPort			1
+      }
+      Branch {
+	Points			[40, 0]
+	DstBlock		"Series RLC Branch"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Ground (output)"
+      SrcPort		      1
+      DstBlock		      "AC Voltage Source"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Series RLC Branch"
+      SrcPort		      1
+      DstBlock		      "Ground (input)"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Series RLC Branch1"
+      SrcPort		      1
+      DstBlock		      "Ground (input)1"
+      DstPort		      1
+    }
+  }
+}

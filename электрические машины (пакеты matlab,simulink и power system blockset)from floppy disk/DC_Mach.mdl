@@ -1,0 +1,270 @@
+Model {
+  Name			  "DC_Mach"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  off
+  InitFcn		  "powericon('psbinitsys',bdroot);"
+  Created		  "Tue Jan 22 18:05:14 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "ieao"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Nov 12 11:08:04 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:3>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "2"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "1e-4"
+  Refine		  "1"
+  MaxStep		  "1e-4"
+  MinStep		  "1e-5"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  off
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  off
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "2"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "DC_Mach"
+    Location		    [53, 181, 525, 457]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "DC Machine1"
+      Ports		      [3, 3]
+      Position		      [195, 100, 270, 180]
+      SourceBlock	      "powerlib2/Machines/DC Machine"
+      SourceType	      "DC machine"
+      RLa		      "[ 2.52  0.048]"
+      RLf		      "[ 92 120]"
+      Laf		      "0.207"
+      J			      "0.01"
+      Bm		      "0"
+      Tf		      "0"
+      w0		      "0"
+      PSBOutputType	      "110"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [335, 123, 410, 207]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "1e-3"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Moment"
+      Position		      [130, 150, 155, 180]
+      Value		      "5"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "V1"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Description	      "source block"
+      Ports		      [1, 1]
+      Position		      [65, 145, 85, 180]
+      Orientation	      "up"
+      SourceBlock	      "powerlib2/Electrical\nSources/DC Voltage Source"
+      SourceType	      "DC Voltage Source"
+      V			      "220"
+      mesure		      "None"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "V2"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Description	      "source block"
+      Ports		      [1, 1]
+      Position		      [210, 32, 260, 68]
+      Orientation	      "left"
+      SourceBlock	      "powerlib2/Electrical\nSources/DC Voltage Source"
+      SourceType	      "DC Voltage Source"
+      V			      "220"
+      mesure		      "None"
+      PSBOutputType	      "1"
+    }
+    Line {
+      SrcBlock		      "V2"
+      SrcPort		      1
+      Points		      [-25, 0]
+      DstBlock		      "DC Machine1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "DC Machine1"
+      SrcPort		      1
+      Points		      [10, 0; 0, -65]
+      DstBlock		      "V2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "DC Machine1"
+      SrcPort		      2
+      Points		      [25, 0; 0, 90; -225, 0]
+      DstBlock		      "V1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "V1"
+      SrcPort		      1
+      DstBlock		      "DC Machine1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "DC Machine1"
+      SrcPort		      3
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Moment"
+      SrcPort		      1
+      DstBlock		      "DC Machine1"
+      DstPort		      3
+    }
+  }
+}

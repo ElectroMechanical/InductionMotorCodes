@@ -1,0 +1,1242 @@
+Model {
+  Name			  "tpch2"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed Jan 01 01:29:29 1997"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Blue Phoenix"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Apr 05 12:55:42 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:56>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "0.5"
+  MaxOrder		  5
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sin
+      SineType		      "Time based"
+      Amplitude		      "1"
+      Bias		      "0"
+      Frequency		      "1"
+      Phase		      "0"
+      Samples		      "10"
+      Offset		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      ToFile
+      Filename		      "untitled.mat"
+      MatrixName	      "ans"
+      Decimation	      "1"
+      SampleTime	      "-1"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "tpch2"
+    Location		    [51, 82, 617, 435]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      " 3faz_AD_(ab)"
+      Ports		      [3, 7]
+      Position		      [220, 62, 320, 298]
+      TreatAsAtomicUnit	      off
+      System {
+	Name			" 3faz_AD_(ab)"
+	Location		[15, 98, 598, 423]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In6"
+	  Position		  [30, 88, 60, 102]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In7"
+	  Position		  [25, 298, 55, 312]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In8"
+	  Position		  [475, 78, 505, 92]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "  Prod1"
+	  Ports			  [2, 1]
+	  Position		  [405, 97, 435, 128]
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [140, 34, 185, 66]
+	  Orientation		  "left"
+	  ShowName		  off
+	  Gain			  "89.6111"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  Position		  [140, 429, 185, 461]
+	  Orientation		  "left"
+	  ShowName		  off
+	  Gain			  "81.4411"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain10"
+	  Position		  [220, 76, 260, 114]
+	  ShowName		  off
+	  Gain			  "86.711"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain11"
+	  Position		  [325, 24, 370, 56]
+	  Orientation		  "left"
+	  ShowName		  off
+	  Gain			  "91.9311"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain12"
+	  Position		  [290, 354, 335, 386]
+	  Orientation		  "left"
+	  ShowName		  off
+	  Gain			  "91.9311"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain2"
+	  Position		  [510, 177, 550, 213]
+	  ShowName		  off
+	  Gain			  "102.7"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain3"
+	  Position		  [615, 174, 650, 206]
+	  ShowName		  off
+	  Gain			  "202.7"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain4"
+	  Position		  [475, 353, 515, 387]
+	  ShowName		  off
+	  Gain			  "22.81"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain5"
+	  Position		  [130, 212, 180, 248]
+	  Orientation		  "left"
+	  ShowName		  off
+	  Gain			  "89.6110"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain6"
+	  Position		  [130, 165, 180, 205]
+	  Orientation		  "left"
+	  ShowName		  off
+	  Gain			  "81.4444"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain7"
+	  Position		  [475, 417, 515, 453]
+	  ShowName		  off
+	  Gain			  "25.11"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain9"
+	  Position		  [215, 291, 260, 329]
+	  ShowName		  off
+	  Gain			  "86.711"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "In1"
+	  Ports			  [1, 1]
+	  Position		  [155, 80, 185, 110]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "In2"
+	  Ports			  [1, 1]
+	  Position		  [150, 290, 180, 320]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "In3"
+	  Ports			  [1, 1]
+	  Position		  [340, 90, 370, 120]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "In4"
+	  Ports			  [1, 1]
+	  Position		  [320, 295, 350, 325]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "In5"
+	  Ports			  [1, 1]
+	  Position		  [665, 175, 695, 205]
+	  Port {
+	    PortNumber		    1
+	    Name		    "omega"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	    DataLogging		    off
+	    DataLoggingNameMode	    "SignalName"
+	    DataLoggingDecimateData off
+	    DataLoggingDecimation   "2"
+	    DataLoggingLimitDataPoints off
+	    DataLoggingMaxPoints    "5000"
+	  }
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Prod3"
+	  Ports			  [2, 1]
+	  Position		  [325, 157, 355, 188]
+	  Orientation		  "left"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Prod4"
+	  Ports			  [2, 1]
+	  Position		  [325, 212, 355, 243]
+	  Orientation		  "left"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Prod6"
+	  Ports			  [2, 1]
+	  Position		  [415, 282, 445, 313]
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [3, 1]
+	  Position		  [100, 66, 115, 124]
+	  Inputs		  "-++"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [3, 1]
+	  Position		  [100, 275, 115, 335]
+	  Inputs		  "-++"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [3, 1]
+	  Position		  [280, 69, 295, 121]
+	  Inputs		  "-+-"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum4"
+	  Ports			  [3, 1]
+	  Position		  [280, 284, 295, 336]
+	  Inputs		  "++-"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum5"
+	  Ports			  [2, 1]
+	  Position		  [475, 176, 490, 209]
+	  Inputs		  "+-"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum6"
+	  Ports			  [2, 1]
+	  Position		  [580, 171, 595, 204]
+	  Inputs		  "-+"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum8"
+	  Ports			  [2, 1]
+	  Position		  [580, 380, 595, 435]
+	  NamePlacement		  "alternate"
+	  Inputs		  "-+"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [640, 228, 670, 242]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [670, 308, 700, 322]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  Position		  [620, 403, 650, 417]
+	  Port			  "3"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out4"
+	  Position		  [260, 173, 290, 187]
+	  Port			  "4"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out5"
+	  Position		  [425, 48, 455, 62]
+	  Port			  "5"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out6"
+	  Position		  [250, 378, 280, 392]
+	  Port			  "6"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out7"
+	  Position		  [425, 333, 455, 347]
+	  Port			  "7"
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [-50, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "In2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In4"
+	  SrcPort		  1
+	  Points		  [0, -5; 15, 0]
+	  Branch {
+	    DstBlock		    "Prod4"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    Branch {
+	      Points		      [0, 75]
+	      DstBlock		      "Gain1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "Gain12"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "Gain4"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [15, 0]
+	    Branch {
+	      DstBlock		      "Prod6"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, 35]
+	      DstBlock		      "Out7"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "In3"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    Points		    [0, 60]
+	    DstBlock		    "Prod3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "  Prod1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -40]
+	    Branch {
+	      Points		      [-80, 0; 0, 70; -80, 0; 0, 50]
+	      DstBlock		      "Gain6"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 0]
+	      Branch {
+		DstBlock		"Gain11"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[25, 0]
+		DstBlock		"Out5"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Prod6"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, -100]
+	  DstBlock		  "Sum5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gain3"
+	  SrcPort		  1
+	  DstBlock		  "In5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In8"
+	  SrcPort		  1
+	  Points		  [55, 0]
+	  DstBlock		  "Sum6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "  Prod1"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 70]
+	  DstBlock		  "Sum5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  Points		  [0, 10]
+	  DstBlock		  "In3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum5"
+	  SrcPort		  1
+	  DstBlock		  "Gain2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "In1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    Points		    [0, -30]
+	    Branch {
+	      Points		      [190, 0]
+	      DstBlock		      "  Prod1"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -45]
+	      DstBlock		      "Gain5"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 10]
+	    Branch {
+	      DstBlock		      "Gain9"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 50]
+	      Branch {
+		Points			[0, 70]
+		DstBlock		"Gain7"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[20, 0; 0, 20]
+		DstBlock		"Out6"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [0, 0; 20, 0]
+	  Branch {
+	    Points		    [0, 0]
+	    Branch {
+	      DstBlock		      "Gain10"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [-5, 0; 0, -45]
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [-5, 0; 0, 45; 35, 0]
+	    Branch {
+	      Points		      [160, 0]
+	      DstBlock		      "Prod6"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 40]
+	      DstBlock		      "Out4"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain10"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gain9"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gain5"
+	  SrcPort		  1
+	  Points		  [-45, 0; 0, 55]
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [3, 0]
+	  SrcBlock		  "Prod4"
+	  SrcPort		  1
+	  Points		  [-20, -50; 0, -20; -50, 0; 0, -50]
+	  DstBlock		  "Sum3"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Prod3"
+	  SrcPort		  1
+	  Points		  [-20, 55; 0, 25; -35, 0]
+	  DstBlock		  "Sum4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain2"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  Branch {
+	    DstBlock		    "Sum6"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 40]
+	    DstBlock		    "Out1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain11"
+	  SrcPort		  1
+	  Points		  [-60, 0; 0, 40]
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain12"
+	  SrcPort		  1
+	  Points		  [-20, 0]
+	  DstBlock		  "Sum4"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "omega"
+	  SrcBlock		  "In5"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 70; -100, 0]
+	  Branch {
+	    Points		    [-195, 0; 0, -40]
+	    Branch {
+	      Points		      [0, -40]
+	      DstBlock		      "Prod3"
+	      DstPort		      2
+	    }
+	    Branch {
+	      DstBlock		      "Prod4"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 55]
+	    DstBlock		    "Out2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum4"
+	  SrcPort		  1
+	  DstBlock		  "In4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain7"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  DstBlock		  "Sum8"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gain4"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  DstBlock		  "Sum8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain6"
+	  SrcPort		  1
+	  Points		  [-50, 0; 0, -70]
+	  DstBlock		  "Sum1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  Points		  [-65, 0; 0, -120]
+	  DstBlock		  "Sum2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "In7"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "In6"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum8"
+	  SrcPort		  1
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum6"
+	  SrcPort		  1
+	  DstBlock		  "Gain3"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "G1"
+	  Position		  [159, 33]
+	}
+	Annotation {
+	  Name			  "G2"
+	  Position		  [147, 166]
+	}
+	Annotation {
+	  Name			  "G3"
+	  Position		  [142, 215]
+	}
+	Annotation {
+	  Name			  "G4"
+	  Position		  [163, 415]
+	}
+	Annotation {
+	  Name			  "G10"
+	  Position		  [537, 175]
+	}
+	Annotation {
+	  Name			  "G9"
+	  Position		  [635, 169]
+	}
+	Annotation {
+	  Name			  "G6"
+	  Position		  [238, 68]
+	}
+	Annotation {
+	  Name			  "G7"
+	  Position		  [239, 285]
+	}
+	Annotation {
+	  Name			  "G8"
+	  Position		  [302, 387]
+	}
+	Annotation {
+	  Name			  "G5"
+	  Position		  [328, 52]
+	}
+	Annotation {
+	  Name			  "G11"
+	  Position		  [495, 337]
+	}
+	Annotation {
+	  Name			  "G12"
+	  Position		  [446, 406]
+	}
+      }
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Cos (0mega*t)"
+      Position		      [30, 165, 60, 195]
+      Amplitude		      "311"
+      Frequency		      "314"
+      Phase		      "-pi/2"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      ToFile
+      Name		      "Grafik_TPCH"
+      Position		      [480, 253, 555, 287]
+      Filename		      "DanTPCH.mat"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Mc"
+      Position		      [40, 241, 70, 279]
+      Time		      "0.06"
+      Before		      "0.0"
+      After		      "17"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Moment"
+      Ports		      [1]
+      Position		      [385, 60, 415, 90]
+      Location		      [17, 184, 341, 423]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "80"
+      YMin		      "-1"
+      YMax		      "2"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Moment1"
+      Ports		      [1]
+      Position		      [110, 15, 140, 45]
+      Location		      [17, 184, 341, 423]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "80"
+      YMin		      "-1"
+      YMax		      "2"
+      SaveName		      "ScopeData3"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [6, 1]
+      Position		      [430, 186, 435, 349]
+      ShowName		      off
+      Inputs		      "6"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Omega"
+      Ports		      [1]
+      Position		      [450, 95, 480, 125]
+      Location		      [50, 184, 391, 400]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "0.5"
+      YMin		      "0"
+      YMax		      "200"
+      SaveName		      "ScopeData1"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+    }
+    Block {
+      BlockType		      Sin
+      Name		      "Sin  (omega*t)"
+      Position		      [35, 85, 65, 115]
+      Amplitude		      "311"
+      Frequency		      "314"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Tok Ias"
+      Ports		      [1]
+      Position		      [515, 130, 545, 160]
+      Location		      [17, 184, 341, 423]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      TimeRange		      "0.5"
+      YMin		      "-15"
+      YMax		      "15"
+      SaveName		      "ScopeData2"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+    }
+    Line {
+      SrcBlock		      " 3faz_AD_(ab)"
+      SrcPort		      1
+      DstBlock		      "Moment"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      " 3faz_AD_(ab)"
+      SrcPort		      2
+      DstBlock		      "Omega"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      " 3faz_AD_(ab)"
+      SrcPort		      3
+      DstBlock		      "Tok Ias"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Cos (0mega*t)"
+      SrcPort		      1
+      Points		      [75, 0]
+      Branch {
+	Points			[50, 0]
+	DstBlock		" 3faz_AD_(ab)"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 160; 265, 0; 0, -10]
+	DstBlock		"Mux"
+	DstPort			6
+      }
+    }
+    Line {
+      SrcBlock		      " 3faz_AD_(ab)"
+      SrcPort		      4
+      Points		      [40, 0; 0, 25]
+      DstBlock		      "Mux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      " 3faz_AD_(ab)"
+      SrcPort		      5
+      Points		      [0, 5; 90, 0]
+      DstBlock		      "Mux"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      " 3faz_AD_(ab)"
+      SrcPort		      6
+      Points		      [90, 0]
+      DstBlock		      "Mux"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      " 3faz_AD_(ab)"
+      SrcPort		      7
+      Points		      [90, 0]
+      DstBlock		      "Mux"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Grafik_TPCH"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mc"
+      SrcPort		      1
+      DstBlock		      " 3faz_AD_(ab)"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Sin  (omega*t)"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[80, 0]
+	Branch {
+	  Points		  [25, 0]
+	  DstBlock		  " 3faz_AD_(ab)"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 220; 210, 0; 0, -15]
+	  DstBlock		  "Mux"
+	  DstPort		  5
+	}
+      }
+      Branch {
+	Points			[0, -70]
+	DstBlock		"Moment1"
+	DstPort			1
+      }
+    }
+    Annotation {
+      Position		      [260, 344]
+    }
+    Annotation {
+      Name		      "Mux"
+      Position		      [431, 171]
+    }
+  }
+}

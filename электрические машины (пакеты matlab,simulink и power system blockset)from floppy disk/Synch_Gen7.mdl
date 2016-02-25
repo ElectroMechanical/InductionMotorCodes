@@ -1,0 +1,835 @@
+Model {
+  Name			  "Synch_Gen7"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  InitFcn		  "powericon('psbinitsys',bdroot);"
+  Created		  "Fri Mar 29 11:34:37 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "ieao"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Mar 29 12:19:20 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "Synch_Gen7"
+    Location		    [202, 78, 881, 701]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "Bus Bar 2"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [3, 1]
+      Position		      [460, 331, 465, 439]
+      BackgroundColor	      "black"
+      ShowName		      off
+      SourceBlock	      "powerlib2/Connectors/Bus Bar (vert)"
+      SourceType	      "Bus Bar"
+      entrees		      "3"
+      sorties		      "1"
+      PSBOutputType	      "11111111111111111111111111111111111111111111111"
+"111111111111111111111111111111111111111111"
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "Fcn"
+      Position		      [285, 465, 315, 485]
+      Expr		      "sqrt(u[1]^2+u[2]^2)"
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "Fcn1"
+      Position		      [345, 25, 375, 45]
+      Expr		      "sqrt(u[1]^2+u[2]^2)"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [290, 505, 320, 535]
+      Gain		      "30/pi"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain1"
+      Position		      [290, 550, 320, 580]
+      Gain		      "1/1e3"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain2"
+      Position		      [350, 65, 380, 95]
+      Gain		      "30/pi"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain3"
+      Position		      [350, 110, 380, 140]
+      Gain		      "1/1e3"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ground"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1]
+      Position		      [480, 400, 510, 430]
+      Orientation	      "down"
+      ShowName		      off
+      SourceBlock	      "powerlib2/Connectors/Ground (input)"
+      SourceType	      "Ground"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "L connector"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1, 0, 1]
+      Position		      [255, 265, 275, 285]
+      ShowName		      off
+      SourceBlock	      "powerlib2/Connectors/L connector"
+      SourceType	      "Bus Bar"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "L connector1"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1, 0, 1]
+      Position		      [290, 265, 310, 285]
+      ShowName		      off
+      SourceBlock	      "powerlib2/Connectors/L connector"
+      SourceType	      "Bus Bar"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "L connector2"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1, 0, 1]
+      Position		      [330, 265, 350, 285]
+      ShowName		      off
+      SourceBlock	      "powerlib2/Connectors/L connector"
+      SourceType	      "Bus Bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "N"
+      Ports		      [1]
+      Position		      [340, 510, 360, 530]
+      Floating		      off
+      Location		      [335, 535, 706, 774]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "5"
+      YMin		      "1798.5"
+      YMax		      "1800.5"
+      SaveToWorkspace	      on
+      SaveName		      "N"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "N1"
+      Ports		      [1]
+      Position		      [400, 70, 420, 90]
+      Floating		      off
+      Location		      [335, 535, 706, 774]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "5"
+      YMin		      "1798.5"
+      YMax		      "1800.5"
+      SaveToWorkspace	      on
+      SaveName		      "N1"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Pe"
+      Ports		      [1]
+      Position		      [340, 556, 360, 574]
+      Floating		      off
+      Location		      [334, 386, 658, 625]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "5"
+      YMin		      "-25"
+      YMax		      "25"
+      SaveToWorkspace	      on
+      SaveName		      "Pe"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Pe1"
+      Ports		      [1]
+      Position		      [405, 116, 425, 134]
+      Floating		      off
+      Location		      [363, 372, 687, 611]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "5"
+      YMin		      "-35"
+      YMax		      "35"
+      SaveToWorkspace	      on
+      SaveName		      "Pe1"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Pm step"
+      Position		      [50, 355, 70, 375]
+      Time		      "0.5"
+      Before		      "-50000"
+      After		      "-60000"
+      SampleTime	      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Pm step1"
+      Position		      [45, 165, 65, 185]
+      Time		      "0.5"
+      Before		      "-50000"
+      After		      "-60000"
+      SampleTime	      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "SM Measurement\nDemux"
+      Ports		      [1, 3]
+      Position		      [240, 454, 270, 586]
+      SourceBlock	      "powerlib11/Machines/SM\nMeasurement\nDemux"
+      SourceType	      "Synchronous Machine measurements"
+      a			      off
+      b			      on
+      c			      off
+      d			      off
+      e			      off
+      f			      off
+      g			      off
+      h			      on
+      i			      on
+      j			      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "SM Measurement\nDemux1"
+      Ports		      [1, 3]
+      Position		      [300, 14, 330, 146]
+      SourceBlock	      "powerlib11/Machines/SM\nMeasurement\nDemux"
+      SourceType	      "Synchronous Machine measurements"
+      a			      off
+      b			      on
+      c			      off
+      d			      off
+      e			      off
+      f			      off
+      g			      off
+      h			      on
+      i			      on
+      j			      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Synchronous Machine"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [2, 4]
+      Position		      [115, 334, 215, 456]
+      SourceBlock	      "powerlib2/Machines/Synchronous Machine\nSI Fund"
+"amental"
+      SourceType	      "Synchronous Machine"
+      rotorType		      "Salient-pole"
+      x1		      "[ 111900 440*sqrt(3) 60  0]"
+      x2		      "[ .26 1.14e-3 13.7e-3 11.0e-3 ]\n"
+      x3		      "[ 0.13 2.1e-3 ]\n"
+      x4b		      "[ 1 2 3 4 5 6 ]"
+      x4		      "[ 0.0224 1.4e-3 0.02 1e-3 ]\n"
+      x5		      "[ 24.9 0 2 ]"
+      x6		      "[ 0  335.978  55.9962,55.9962,55.9962  258.5352"
+",138.5352,18.5352  15.6622 ]"
+      x7		      off
+      x8		      "[]"
+      x9		      off
+      PSBOutputType	      "1110"
+      iounits		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Synchronous Machine1"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [2, 4]
+      Position		      [115, 144, 215, 266]
+      SourceBlock	      "powerlib2/Machines/Synchronous Machine\nSI Fund"
+"amental"
+      SourceType	      "Synchronous Machine"
+      rotorType		      "Salient-pole"
+      x1		      "[ 111900 440*sqrt(3) 60  0]"
+      x2		      "[ .26 1.14e-3 13.7e-3 11.0e-3 ]\n"
+      x3		      "[ 0.13 2.1e-3 ]\n"
+      x4b		      "[ 1 2 3 4 5 6 ]"
+      x4		      "[ 0.0224 1.4e-3 0.02 1e-3 ]\n"
+      x5		      "[ 24.9 0 2 ]"
+      x6		      "[ 0  335.978  55.9962,55.9962,55.9962  258.5352"
+",138.5352,18.5352  15.6622 ]"
+      x7		      off
+      x8		      "[]"
+      x9		      off
+      PSBOutputType	      "1110"
+      iounits		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Voltage Measurement"
+      Tag		      "PoWeRsYsTeMmEaSuReMeNt"
+      Ports		      [2, 1]
+      Position		      [415, 193, 440, 217]
+      SourceBlock	      "powerlib2/Measurements/Voltage Measurement"
+      SourceType	      "Voltage Measurement"
+      PSBOutputType	      "0"
+      PSBequivalent	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "is"
+      Ports		      [1]
+      Position		      [340, 466, 360, 484]
+      Floating		      off
+      Location		      [487, 328, 811, 567]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "5"
+      YMin		      "55"
+      YMax		      "75"
+      SaveToWorkspace	      on
+      SaveName		      "is"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "is1"
+      Ports		      [1]
+      Position		      [395, 26, 415, 44]
+      Floating		      off
+      Location		      [487, 328, 811, 567]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "5"
+      YMin		      "55"
+      YMax		      "75"
+      SaveToWorkspace	      on
+      SaveName		      "is1"
+      DataFormat	      "Array"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "va"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1, 1]
+      Position		      [400, 335, 440, 365]
+      SourceBlock	      "powerlib2/Electrical\nSources/AC Voltage Source"
+      SourceType	      "AC Voltage Source"
+      A			      "440*sqrt(2)"
+      P			      "270"
+      F			      "60"
+      stime		      "0"
+      mesure		      "None"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "vb"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1, 1]
+      Position		      [400, 370, 440, 400]
+      SourceBlock	      "powerlib2/Electrical\nSources/AC Voltage Source"
+      SourceType	      "AC Voltage Source"
+      A			      "440*sqrt(2)"
+      P			      "150"
+      F			      "60"
+      stime		      "0"
+      mesure		      "None"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "vc"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1, 1]
+      Position		      [405, 400, 445, 430]
+      SourceBlock	      "powerlib2/Electrical\nSources/AC Voltage Source"
+      SourceType	      "AC Voltage Source"
+      A			      "440*sqrt(2)"
+      P			      "30"
+      F			      "60"
+      stime		      "0"
+      mesure		      "None"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "vfd"
+      Position		      [45, 416, 85, 434]
+      Value		      "15.6622"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "vfd1"
+      Position		      [40, 226, 80, 244]
+      Value		      "15.6622"
+      VectorParams1D	      on
+    }
+    Line {
+      SrcBlock		      "Synchronous Machine"
+      SrcPort		      4
+      Points		      [5, 0]
+      DstBlock		      "SM Measurement\nDemux"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vfd"
+      SrcPort		      1
+      DstBlock		      "Synchronous Machine"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "va"
+      SrcPort		      1
+      DstBlock		      "Bus Bar 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vb"
+      SrcPort		      1
+      DstBlock		      "Bus Bar 2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "vc"
+      SrcPort		      1
+      Points		      [0, 5]
+      DstBlock		      "Bus Bar 2"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Pm step"
+      SrcPort		      1
+      DstBlock		      "Synchronous Machine"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Fcn"
+      SrcPort		      1
+      DstBlock		      "is"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SM Measurement\nDemux"
+      SrcPort		      1
+      DstBlock		      "Fcn"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SM Measurement\nDemux"
+      SrcPort		      2
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SM Measurement\nDemux"
+      SrcPort		      3
+      DstBlock		      "Gain1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "N"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain1"
+      SrcPort		      1
+      DstBlock		      "Pe"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "vfd1"
+      SrcPort		      1
+      DstBlock		      "Synchronous Machine1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Pm step1"
+      SrcPort		      1
+      DstBlock		      "Synchronous Machine1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Synchronous Machine1"
+      SrcPort		      1
+      Points		      [45, 0]
+      DstBlock		      "L connector"
+      DstPort		      enable
+    }
+    Line {
+      SrcBlock		      "Synchronous Machine1"
+      SrcPort		      2
+      Points		      [80, 0]
+      Branch {
+	DstBlock		"L connector1"
+	DstPort			enable
+      }
+      Branch {
+	Points			[100, 0]
+	DstBlock		"Voltage Measurement"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Synchronous Machine1"
+      SrcPort		      3
+      Points		      [120, 0]
+      Branch {
+	DstBlock		"L connector2"
+	DstPort			enable
+      }
+      Branch {
+	Points			[60, 0]
+	DstBlock		"Voltage Measurement"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Synchronous Machine"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	DstBlock		"L connector"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"va"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Synchronous Machine"
+      SrcPort		      2
+      Points		      [55, 0]
+      Branch {
+	DstBlock		"L connector1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 5]
+	DstBlock		"vb"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Synchronous Machine"
+      SrcPort		      3
+      Points		      [95, 0]
+      Branch {
+	DstBlock		"L connector2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 5]
+	DstBlock		"vc"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Bus Bar 2"
+      SrcPort		      1
+      DstBlock		      "Ground"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Fcn1"
+      SrcPort		      1
+      DstBlock		      "is1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SM Measurement\nDemux1"
+      SrcPort		      1
+      DstBlock		      "Fcn1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SM Measurement\nDemux1"
+      SrcPort		      2
+      DstBlock		      "Gain2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SM Measurement\nDemux1"
+      SrcPort		      3
+      DstBlock		      "Gain3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain2"
+      SrcPort		      1
+      DstBlock		      "N1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain3"
+      SrcPort		      1
+      DstBlock		      "Pe1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Synchronous Machine1"
+      SrcPort		      4
+      Points		      [25, 0; 0, -170]
+      DstBlock		      "SM Measurement\nDemux1"
+      DstPort		      1
+    }
+  }
+}

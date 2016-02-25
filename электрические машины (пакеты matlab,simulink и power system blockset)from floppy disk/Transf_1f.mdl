@@ -1,0 +1,470 @@
+Model {
+  Name			  "Transf_1f"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  off
+  InitFcn		  "powericon('psbinitsys',bdroot);"
+  Created		  "Tue Jan 22 17:23:20 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Jan 27 17:26:20 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:4>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "0.1"
+  SolverMode		  "Auto"
+  Solver		  "ode23tb"
+  RelTol		  "auto"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  off
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  off
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Structure"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeLogAll		  on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "Transf_1f"
+    Location		    [244, 159, 830, 479]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "Bus Bar (thin horiz)"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [0, 2]
+      Position		      [118, 295, 222, 300]
+      Orientation	      "up"
+      ShowName		      off
+      SourceBlock	      "powerlib2/Connectors/Bus Bar (thin horiz)"
+      SourceType	      "Bus Bar"
+      input		      "0"
+      output		      "2"
+      PSBOutputType	      "11111111111111111111111111111111111111111111111"
+"1111111111111111111111111111111111111"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Bus Bar (thin horiz)1"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [2]
+      Position		      [283, 305, 387, 310]
+      Orientation	      "down"
+      ShowName		      off
+      SourceBlock	      "powerlib2/Connectors/Bus Bar (thin horiz)"
+      SourceType	      "Bus Bar"
+      input		      "2"
+      output		      "0"
+      PSBOutputType	      "11111111111111111111111111111111111111111111111"
+"1111111111111111111111111111111111111"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1]
+      Position		      [325, 113, 395, 157]
+      Format		      "short"
+      Decimation	      "5"
+      Floating		      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "E1"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Description	      "source block"
+      Ports		      [1, 1]
+      Position		      [77, 240, 103, 275]
+      Orientation	      "up"
+      SourceBlock	      "powerlib2/Electrical\nSources/AC Voltage Source"
+      SourceType	      "AC Voltage Source"
+      A			      "310"
+      P			      "0"
+      F			      "50"
+      stime		      "0"
+      mesure		      "None"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "I1"
+      Tag		      "PoWeRsYsTeMmEaSuReMeNt"
+      Ports		      [1, 2]
+      Position		      [125, 198, 150, 222]
+      SourceBlock	      "powerlib2/Measurements/Current Measurement"
+      SourceType	      "Current Measurement"
+      PSBOutputType	      "01"
+      PSBequivalent	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "I2"
+      Tag		      "PoWeRsYsTeMmEaSuReMeNt"
+      Ports		      [1, 2]
+      Position		      [325, 203, 350, 227]
+      SourceBlock	      "powerlib2/Measurements/Current Measurement"
+      SourceType	      "Current Measurement"
+      PSBOutputType	      "01"
+      PSBequivalent	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Linear Transformer"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [2, 2]
+      Position		      [255, 196, 300, 274]
+      NamePlacement	      "alternate"
+      SourceBlock	      "powerlib2/Elements/Linear Transformer"
+      SourceType	      "Linear Transformer"
+      a			      "[250 50]"
+      b			      "[220 0.02 0.08]"
+      c			      "[100 0.02 0.08]"
+      d			      "[0]"
+      e			      "[500 500]"
+      mesure		      "None"
+      PSBOutputType	      "1111"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "P1,Q1"
+      Ports		      [2, 1]
+      Position		      [270, 109, 305, 156]
+      SourceBlock	      "powerlib_extras/Measurements/Active & Reactive"
+"\nPower"
+      SourceType	      "Active & Reactive Power "
+      f1		      "50"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "R Load"
+      Tag		      "PoWeRsYsTeMbLoCk"
+      Ports		      [1, 1]
+      Position		      [415, 245, 435, 285]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      SourceBlock	      "powerlib2/Elements/Series RLC Branch"
+      SourceType	      "Series RLC Branch"
+      a			      "50"
+      b			      "0"
+      c			      "inf"
+      mesure		      "None"
+      PSBOutputType	      "1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [2]
+      Position		      [500, 174, 530, 216]
+      Floating		      off
+      Location		      [336, 227, 660, 714]
+      Open		      off
+      NumInputPorts	      "2"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-100~-5"
+      YMax		      "100~5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "V1"
+      Tag		      "PoWeRsYsTeMmEaSuReMeNt"
+      Ports		      [2, 1]
+      Position		      [215, 108, 240, 132]
+      SourceBlock	      "powerlib2/Measurements/Voltage Measurement"
+      SourceType	      "Voltage Measurement"
+      PSBOutputType	      "0"
+      PSBequivalent	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "V2"
+      Tag		      "PoWeRsYsTeMmEaSuReMeNt"
+      Ports		      [2, 1]
+      Position		      [415, 173, 440, 197]
+      SourceBlock	      "powerlib2/Measurements/Voltage Measurement"
+      SourceType	      "Voltage Measurement"
+      PSBOutputType	      "0"
+      PSBequivalent	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "powergui"
+      Ports		      []
+      Position		      [65, 55, 156, 84]
+      DropShadow	      on
+      ShowName		      off
+      SourceBlock	      "powerlib2/powergui"
+      SourceType	      ""
+      matfilesaved	      off
+      Frange		      "logspace(0,3,50)"
+      Ylog		      off
+      Xlog		      off
+      save		      off
+      variable		      "ZData"
+      display		      off
+    }
+    Line {
+      SrcBlock		      "E1"
+      SrcPort		      1
+      Points		      [0, -25]
+      DstBlock		      "I1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "I1"
+      SrcPort		      2
+      Points		      [-5, 0; 25, 0]
+      Branch {
+	Points			[0, 0]
+	DstBlock		"Linear Transformer"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -100]
+	DstBlock		"V1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Bus Bar (thin horiz)"
+      SrcPort		      1
+      Points		      [0, 10; -55, 0]
+      DstBlock		      "E1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Bus Bar (thin horiz)"
+      SrcPort		      2
+      Points		      [0, -5; 0, -30]
+      Branch {
+	DstBlock		"Linear Transformer"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -130]
+	DstBlock		"V1"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Linear Transformer"
+      SrcPort		      1
+      DstBlock		      "I2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Linear Transformer"
+      SrcPort		      2
+      Points		      [5, 0]
+      DstBlock		      "Bus Bar (thin horiz)1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "V1"
+      SrcPort		      1
+      DstBlock		      "P1,Q1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "I1"
+      SrcPort		      1
+      Points		      [0, -60]
+      DstBlock		      "P1,Q1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "P1,Q1"
+      SrcPort		      1
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "V2"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "I2"
+      SrcPort		      1
+      Points		      [130, 0]
+      DstBlock		      "Scope"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "I2"
+      SrcPort		      2
+      Points		      [5, 0]
+      Branch {
+	Points			[65, 0]
+	DstBlock		"R Load"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -40]
+	DstBlock		"V2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "R Load"
+      SrcPort		      1
+      Points		      [0, 5; -40, 0]
+      Branch {
+	Points			[-25, 0]
+	DstBlock		"Bus Bar (thin horiz)1"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -105]
+	DstBlock		"V2"
+	DstPort			2
+      }
+    }
+  }
+}

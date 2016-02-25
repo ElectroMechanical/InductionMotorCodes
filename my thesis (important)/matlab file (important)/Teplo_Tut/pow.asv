@@ -1,0 +1,19 @@
+function y=pow(P2),% Callculation slips for P2=const
+global U f Mc;% script file Ust_Rezim.m
+m=3;       % number of phace, Y-CONNECTED,
+pol=3;      % number of par pole [o.e], 
+%==============================================
+% Parametrs of T -basic circuit AD 
+Rs=3.57;  % Resistance of phace stator,[Om]
+Rr=3.8;   % Resistance of phace rotor,[Om]
+Xs=4.99*f/50;  % Leakage reactance of phace stator,[Om]
+Xr=8.28*f/50;  % Leakage reactance of phace  rotor,[Om]
+Xm=82.53*f/50; % Main reactance of phace  stator and rotor,[Om]
+Rmu=5.49*(f/50)^1.6; % Resistance of iron losses,[Om]
+c1=sqrt(((Rs+Rmu)^2+(Xs+Xm)^2)/(Rmu^2+Xm^2));
+%==============================================================
+P2=P2+
+A=m*U^2/(2*P2)-Rs;
+Rp=Rr*((Rs/Rr*(1+Xr/Xm))^2+(Xs/Rr+(1+Xr/Xm)+Xr/Rr)^2);
+B=2*A+Rp;
+y=(A-sqrt(A^2-c1^2*Rr*B))/B;
